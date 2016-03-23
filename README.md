@@ -1,3 +1,3 @@
-# Ecological inference, a comparision of methods on social data
+# Ecological inference, a comparison of methods on social data
 
-A comparision of Ecological Inference methods on the context of online social data
+A comparison of Ecological Inference methods on the context of online social data
