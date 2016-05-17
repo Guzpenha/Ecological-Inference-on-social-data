@@ -9,10 +9,10 @@ class EIInterface:
 	def __init__(self, name="king"):
 		self.method_name = name
 
-	def run_inference(self,data_file):
+	def run_inference(self,data_file,params):
 		print("-------------------------------------------------------------")
 		print("Running "+self.method_name+"'s inference on file "+data_file+".\n")		
-		os.system("Rscript --vanilla inference_"+self.method_name+".R "+ data_file)
+		os.system("Rscript --vanilla inference_"+self.method_name+".R "+ data_file +" " +' '.join(params))
 		print("Finished.")
 		print("-------------------------------------------------------------\n")
 
