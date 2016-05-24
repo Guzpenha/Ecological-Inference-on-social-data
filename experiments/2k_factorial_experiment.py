@@ -42,8 +42,8 @@ def divide_in_folds(file_name,num_folds):
 
 
 def get_factors_by_config(config, method_name):
+	config = [0 if c == -1 else 1 for c in config]		
 	if method_name=='imai':
-		config = [0 if c == -1 else 1 for c in config]		
 		mu0 = ['0','2']
 		tau0 = ['2','4']
 		nu0 = ['4','6']
@@ -52,22 +52,39 @@ def get_factors_by_config(config, method_name):
 		# mustart = ['0','2']
 		# sigmastart = ['10','15']
 		# return [mu0[config[0]],tau0[config[1]],nu0[config[2]],s0[config[3]],mustart[config[4]],sigmastart[config[5]]]
+	if method_name == 'king':
+		ehro = ['0.5','1']
+		esigma = ['0.5','1']
+		ebeta = ['0.5','1']
+		return [ehro[config[0]],esigma[config[1]],ebeta[config[2]]]
+	if method_name == "wake":
+		m0 = ['0','0.5']
+		M0 = ['2.3','3']
+		m1 = ['0','0.5']
+		M1 = ['2.3','3']
+		a0 = ['0.8','1']
+		b0 = ['0.01','0.03']
+		a1 = ['0.8','1']
+		b1 = ['0.01','0.03']
+ 		return [m0[config[0]],M0[config[1]],m1[config[2]],M1[config[3]],a0[config[4]],b0[config[5]],a1[config[6]],b1[config[7]]]
 
-# method_name = 'wake'
+method_name = 'wake'
+# method_name = 'imai'
 # method_name = 'king'
-method_name = 'imai'
 
 dataset_name = "all_gt_age.csv"
 n_folds = 5
 
 # num_param  = 7 if method_name == 'imai' else 5 if method_name == 'king' else 8 
-num_param  = 3 if method_name == 'imai' else 5 if method_name == 'king' else 8 
+num_param  = 3 if method_name == 'imai' else 3 if method_name == 'king' else 8 
+print(num_param)
 factorial_project_2k = ff2n(num_param)
 number_of_replications = 1
 
 y_W1 = []
 y_W2 = []
 for rep in range(0,number_of_replications):
+	print("Replication {} of method {} 2^{} factorial project.".format(rep+1,method_name,num_param))
 	for params in factorial_project_2k:
 		params = get_factors_by_config(list(params),method_name)
 		print(params)

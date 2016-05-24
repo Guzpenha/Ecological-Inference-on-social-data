@@ -6,7 +6,7 @@ import os.path
 class EIInterface:
 	method_name = ""
 
-	def __init__(self, name="king"):
+	def __init__(self,name):
 		self.method_name = name
 
 	def run_inference(self,data_file,params):
@@ -18,6 +18,7 @@ class EIInterface:
 
 	def calculate_error_metrics(self,ground_truth_file):
 		if(not os.path.isfile("../results/predicted_W1_"+self.method_name + ground_truth_file)):
+			print("{} file was not found.".format(ground_truth_file))
 			return {"no_file_available":True}
 		f = open("../results/predicted_W1_"+self.method_name + ground_truth_file)
 		predicted_W1= []
@@ -50,5 +51,7 @@ class EIInterface:
 			"RMSE_W1": sqrt(mean_squared_error(predicted_W1, true_values_W1)),
 			"RMSE_W2": sqrt(mean_squared_error(predicted_W2, true_values_W2)),
 			"MAE_W1": mean_absolute_error(predicted_W1, true_values_W1),
-			"MAE_W2": mean_absolute_error(predicted_W2, true_values_W2)
+			"MAE_W2": mean_absolute_error(predicted_W2, true_values_W2),
+			"ABSOLUTE_ERRORS_W1": [abs(x1 - x2) for (x1, x2) in zip(predicted_W1, true_values_W1)],
+			"ABSOLUTE_ERRORS_W2": [abs(x1 - x2) for (x1, x2) in zip(predicted_W2, true_values_W2)]
 		}		
