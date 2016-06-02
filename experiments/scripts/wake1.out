@@ -1,0 +1,235 @@
+8
+Replication 1 of method wake 2^8 factorial project.
+['0', '2.3', '0', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.083206943189063673, nan, nan, nan)
+(0.082645411331378787, nan, nan, nan)
+['0.5', '2.3', '0', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084364723821741275, nan, nan, nan)
+(0.080305828814694585, nan, nan, nan)
+['0', '3', '0', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08222566185048559, nan, nan, nan)
+(0.08291225870948965, nan, nan, nan)
+['0.5', '3', '0', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.080359064878607056, nan, nan, nan)
+(0.087743439287863434, nan, nan, nan)
+['0', '2.3', '0.5', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08487199889452092, nan, nan, nan)
+(0.079031807353116421, nan, nan, nan)
+['0.5', '2.3', '0.5', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.088564613678905238, nan, nan, nan)
+(0.072971132033288477, nan, nan, nan)
+['0', '3', '0.5', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085154019268656705, nan, nan, nan)
+(0.077698601306210591, nan, nan, nan)
+['0.5', '3', '0.5', '2.3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084664057580714963, nan, nan, nan)
+(0.078744384687758906, nan, nan, nan)
+['0', '2.3', '0', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.083771794369733296, nan, nan, nan)
+(0.080790978864268698, nan, nan, nan)
+['0.5', '2.3', '0', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08753731319252174, nan, nan, nan)
+(0.075373891693526221, nan, nan, nan)
+['0', '3', '0', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085187763467400618, nan, nan, nan)
+(0.079753367252433927, nan, nan, nan)
+['0.5', '3', '0', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084280083765298358, nan, nan, nan)
+(0.080354397583441595, nan, nan, nan)
+['0', '2.3', '0.5', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084644044533778384, nan, nan, nan)
+(0.080133845358470415, nan, nan, nan)
+['0.5', '2.3', '0.5', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085122223637799838, nan, nan, nan)
+(0.078027186341945207, nan, nan, nan)
+['0', '3', '0.5', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.081887209207974251, nan, nan, nan)
+(0.083653921858033789, nan, nan, nan)
+['0.5', '3', '0.5', '3', '0.8', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.082914701559945375, nan, nan, nan)
+(0.08204273570637724, nan, nan, nan)
+['0', '2.3', '0', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.087418669808929331, nan, nan, nan)
+(0.075544858220647368, nan, nan, nan)
+['0.5', '2.3', '0', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08613209400278421, nan, nan, nan)
+(0.077543135051019604, nan, nan, nan)
+['0', '3', '0', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085155244520634332, nan, nan, nan)
+(0.078727327761617963, nan, nan, nan)
+['0.5', '3', '0', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.082552931481352607, nan, nan, nan)
+(0.081575395742457951, nan, nan, nan)
+['0', '2.3', '0.5', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08556115009212531, nan, nan, nan)
+(0.077999573861943311, nan, nan, nan)
+['0.5', '2.3', '0.5', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.080264746958331204, nan, nan, nan)
+(0.087100546918405422, nan, nan, nan)
+['0', '3', '0.5', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.082479765806993538, nan, nan, nan)
+(0.083370863414703261, nan, nan, nan)
+['0.5', '3', '0.5', '2.3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085759288093948588, nan, nan, nan)
+(0.077468599157648491, nan, nan, nan)
+['0', '2.3', '0', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.078160709040119819, nan, nan, nan)
+(0.089755530278511297, nan, nan, nan)
+['0.5', '2.3', '0', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.0828826684232985, nan, nan, nan)
+(0.082306836797244196, nan, nan, nan)
+['0', '3', '0', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.083422973963223665, nan, nan, nan)
+(0.080022815999404057, nan, nan, nan)
+['0.5', '3', '0', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.087445107447448114, nan, nan, nan)
+(0.074612233223894306, nan, nan, nan)
+['0', '2.3', '0.5', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08208746856683663, nan, nan, nan)
+(0.084191963499139197, nan, nan, nan)
+['0.5', '2.3', '0.5', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084715508239196477, nan, nan, nan)
+(0.079529094088526098, nan, nan, nan)
+['0', '3', '0.5', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.08691337032238762, nan, nan, nan)
+(0.07561323734938119, nan, nan, nan)
+['0.5', '3', '0.5', '3', '1', '0.01', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.080374486833391712, nan, nan, nan)
+(0.086302424172343226, nan, nan, nan)
+['0', '2.3', '0', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.084409471163953795, nan, nan, nan)
+(0.080538899662118135, nan, nan, nan)
+['0.5', '2.3', '0', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.082749058759122016, nan, nan, nan)
+(0.081407290978311592, nan, nan, nan)
+['0', '3', '0', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085862449231102159, nan, nan, nan)
+(0.077920798394961063, nan, nan, nan)
+['0.5', '3', '0', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.082016680522305083, nan, nan, nan)
+(0.084300226847086795, nan, nan, nan)
+['0', '2.3', '0.5', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.083511571372260882, nan, nan, nan)
+(0.079224090462304053, nan, nan, nan)
+['0.5', '2.3', '0.5', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.083550103640267007, nan, nan, nan)
+(0.079673882178799851, nan, nan, nan)
+['0', '3', '0.5', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.087009377258235418, nan, nan, nan)
+(0.076180270165681768, nan, nan, nan)
+['0.5', '3', '0.5', '2.3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085201909732034245, nan, nan, nan)
+(0.078453841007413649, nan, nan, nan)
+['0', '2.3', '0', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.079355217331560202, nan, nan, nan)
+(0.087407214832591104, nan, nan, nan)
+['0.5', '2.3', '0', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.086119812295436859, nan, nan, nan)
+(0.077109438617282977, nan, nan, nan)
+['0', '3', '0', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085998281078602495, nan, nan, nan)
+(0.076911355927037864, nan, nan, nan)
+['0.5', '3', '0', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.081138963480486923, nan, nan, nan)
+(0.084369343179339876, nan, nan, nan)
+['0', '2.3', '0.5', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.085743093218451319, nan, nan, nan)
+(0.077143076114821657, nan, nan, nan)
+['0.5', '2.3', '0.5', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!
+(0.081433164170648636, nan, nan, nan)
+(0.083715260537940067, nan, nan, nan)
+['0', '3', '0.5', '3', '0.8', '0.03', '0.8', '0.01']
+Running wake's inference on file all_gt_age.csvfold_0.
+	Finished!

@@ -28,30 +28,39 @@ def divide_in_folds(file_name,num_folds):
 					break
 				else:
 					rows.append(row)
-	kf = KFold(n=len(rows), n_folds=num_folds, shuffle=False,random_state=None)
-	positions = np.array(rows)
-	fold =0
-	for train_index, test_index in kf:
-		rows_train = [[]]
-		rows_train[0] = ["MUNICIPIO","Y","X","W1","W2","N"]
-		rows_train = rows_train +  positions[train_index].tolist()		 
-		with open("../data/"+file_name+"fold_"+str(fold), 'wb') as f:
+
+	if(num_folds >1):
+		kf = KFold(n=len(rows), n_folds=num_folds, shuffle=False,random_state=None)
+		positions = np.array(rows)
+		fold =0
+		for train_index, test_index in kf:
+			rows_train = [[]]
+			rows_train[0] = ["MUNICIPIO","Y","X","W1","W2","N"]
+			rows_train = rows_train +  positions[train_index].tolist()		 
+			with open("../data/"+file_name+"fold_"+str(fold), 'wb') as f:
+				writer = csv.writer(f)
+				writer.writerows(rows_train)
+			fold+=1
+	else:
+		rows_to_write = [[]]
+		rows_to_write[0] = ["MUNICIPIO","Y","X","W1","W2","N"]
+		rows_to_write =  rows_to_write + rows
+		with open("../data/"+file_name+"fold_0", 'wb') as f:
 			writer = csv.writer(f)
-			writer.writerows(rows_train)
-		fold+=1
+			writer.writerows(rows_to_write)
 
 
 def get_factors_by_config(config, method_name):
 	config = [0 if c == -1 else 1 for c in config]		
 	if method_name=='imai':
-		mu0 = ['0','2']
+		mu0 = ['0','1']
 		tau0 = ['2','4']
 		nu0 = ['4','6']
-		return [mu0[config[0]],tau0[config[1]],nu0[config[2]]]
-		# s0 = ['10','15']
-		# mustart = ['0','2']
-		# sigmastart = ['10','15']
-		# return [mu0[config[0]],tau0[config[1]],nu0[config[2]],s0[config[3]],mustart[config[4]],sigmastart[config[5]]]
+		# return [mu0[config[0]],tau0[config[1]],nu0[config[2]]]
+		s0 = ['10','15']
+		mustart = ['0','2']
+		sigmastart = ['10','15']
+		return [mu0[config[0]],tau0[config[1]],nu0[config[2]],s0[config[3]],mustart[config[4]],sigmastart[config[5]]]
 	if method_name == 'king':
 		ehro = ['0.5','1']
 		esigma = ['0.5','1']
@@ -73,10 +82,10 @@ method_name = 'wake'
 # method_name = 'king'
 
 dataset_name = "all_gt_age.csv"
-n_folds = 5
+n_folds = 1
 
-# num_param  = 7 if method_name == 'imai' else 5 if method_name == 'king' else 8 
-num_param  = 3 if method_name == 'imai' else 3 if method_name == 'king' else 8 
+num_param  = 6 if method_name == 'imai' else 3 if method_name == 'king' else 8 
+# num_param  = 3 if method_name == 'imai' else 3 if method_name == 'king' else 8 
 print(num_param)
 factorial_project_2k = ff2n(num_param)
 number_of_replications = 1
@@ -229,4 +238,4 @@ print("W2")
 for factor in range(0,len(factorial_project_2k[0])):
 	print("Fator {}, Porcentagem: {}%".format(factor,SS_W2[factor]/SST_W2))
 
-embed()
+# embed()

@@ -2,6 +2,7 @@ import os
 from sklearn.metrics import *
 from math import sqrt
 import os.path
+import subprocess
 
 class EIInterface:
 	method_name = ""
@@ -9,12 +10,16 @@ class EIInterface:
 	def __init__(self,name):
 		self.method_name = name
 
-	def run_inference(self,data_file,params):
-		print("-------------------------------------------------------------")
-		print("Running "+self.method_name+"'s inference on file "+data_file+".\n")		
-		os.system("Rscript --vanilla inference_"+self.method_name+".R "+ data_file +" " +' '.join(params))
-		print("Finished.")
-		print("-------------------------------------------------------------\n")
+	def run_inference(self,data_file,params,silent= False):
+		# print("-------------------------------------------------------------")
+		if( not silent):
+			print("Running "+self.method_name+"'s inference on file "+data_file+".")		
+		with open(os.devnull, 'wb') as devnull:
+			subprocess.check_call("Rscript --vanilla inference_"+self.method_name+".R "+ data_file +" " +' '.join(params), shell=True,stdout=devnull, stderr=subprocess.STDOUT)
+		# os.system("Rscript --vanilla inference_"+self.method_name+".R "+ data_file +" " +' '.join(params))
+		if( not silent):
+			print("	Finished!")
+		# print("-------------------------------------------------------------\n")
 
 	def calculate_error_metrics(self,ground_truth_file):
 		if(not os.path.isfile("../results/predicted_W1_"+self.method_name + ground_truth_file)):

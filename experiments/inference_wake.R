@@ -1,3 +1,4 @@
+sink("/dev/null")
 #!/usr/bin/env Rscript
 library(MCMCpack) 
 args = commandArgs(trailingOnly=TRUE)

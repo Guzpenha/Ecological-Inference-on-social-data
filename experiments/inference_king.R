@@ -1,3 +1,4 @@
+sink("/dev/null")
 #!/usr/bin/env Rscript
 library(ei) # for king 97
 args = commandArgs(trailingOnly=TRUE)
