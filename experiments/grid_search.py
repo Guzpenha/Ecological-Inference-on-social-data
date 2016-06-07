@@ -24,13 +24,13 @@ def grid_search(method,params,dataset,replications =1 ):
 
 if __name__ == "__main__":
 	# king
-	# dataset = 'all_gt_gender.csv'	
-	# method = 'king'	
-	# params = [
-	# 	[str(v) for v in [x * -0.1 for x in range(1, 5)]] + [str(v) for v in [x * 0.1 for x in range(0, 5)]],
-	# 	[str(v) for v in [x * -0.1 for x in range(1, 5)]] + [str(v) for v in [x * 0.1 for x in range(0, 5)]],
-	# 	['0.5']
-	# ]	
+	dataset = 'all_gt_gender.csv'	
+	method = 'king'	
+	params = [
+	[str(v) for v in [x * 0.1 for x in range(0, 5)]],
+	[str(v) for v in [x * 0.1 for x in range(0, 5)]],
+	['0.5']
+	]
 
 	# imai
 	# dataset = 'all_gt_gender.csv'
@@ -46,18 +46,18 @@ if __name__ == "__main__":
 	# ]
 	
 	# wake
-	dataset = 'all_gt_gender.csv'
-	method = 'wake'
-	params = [
-	  [str(v) for v in [x * 0.1 for x in range(0, 3)]],
-		['2.3','2.5','2.7'],
-		[str(v) for v in [x * 0.1 for x in range(0, 3)]],
-		['2.3','2.5','2.7'],
-		['0.7','0.8','0.9'],
-		['0.01','0.03','0.08'],
-		['0.7','0.8','0.9'],
-		['0.01','0.03','0.08']
-	]
+	# dataset = 'all_gt_gender.csv'
+	# method = 'wake'
+	# params = [
+	#   [str(v) for v in [x * 0.1 for x in range(0, 3)]],
+	# 	['2.3','2.5','2.7'],
+	# 	[str(v) for v in [x * 0.1 for x in range(0, 3)]],
+	# 	['2.3','2.5','2.7'],
+	# 	['0.7','0.8','0.9'],
+	# 	['0.01','0.03','0.08'],
+	# 	['0.7','0.8','0.9'],
+	# 	['0.01','0.03','0.08']
+	# ]
 
 	best_result, best_params = (grid_search(method,params,dataset))
 
