@@ -58,5 +58,7 @@ class EIInterface:
 			"MAE_W1": mean_absolute_error(predicted_W1, true_values_W1),
 			"MAE_W2": mean_absolute_error(predicted_W2, true_values_W2),
 			"ABSOLUTE_ERRORS_W1": [abs(x1 - x2) for (x1, x2) in zip(predicted_W1, true_values_W1)],
-			"ABSOLUTE_ERRORS_W2": [abs(x1 - x2) for (x1, x2) in zip(predicted_W2, true_values_W2)]
+			"ABSOLUTE_ERRORS_W2": [abs(x1 - x2) for (x1, x2) in zip(predicted_W2, true_values_W2)],
+			"QUADRATIC_ERRORS_W1": [(abs(x1 - x2)*abs(x1 - x2)) for (x1, x2) in zip(predicted_W1, true_values_W1)],
+			"QUADRATIC_ERRORS_W2": [(abs(x1 - x2)*abs(x1 - x2)) for (x1, x2) in zip(predicted_W2, true_values_W2)]
 		}		
