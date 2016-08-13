@@ -1,5 +1,4 @@
-# Ecological inference, a comparison of methods on social data
-
+# Analysis of Ecological Inference methods on social data
 
 ## Abstract 
 
