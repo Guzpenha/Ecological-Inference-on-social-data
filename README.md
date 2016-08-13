@@ -11,7 +11,7 @@
 Age and social 2x2 tables for support for Dilma from Twitter collected between dates 25/11/2015 and 25/03/2016. Ecological Inference variables Y	X	W1 W2	N for both variables.
 
 ### Gender
-* Y = % of male citizens in city\n
+* Y = % of male citizens in city
 * X = % of users who publish positive posts about Dilma
 * W1 = % of male who publish positive posts about Dilma
 * W2 = % of female who publish positive posts about Dilma
@@ -26,4 +26,4 @@ Age and social 2x2 tables for support for Dilma from Twitter collected between d
 
 ## Experiments
 
-Python and R scripts for comparing models and hypothesis testing.
+Python and R scripts for exploring dataset, comparing models, hypothesis testing.
