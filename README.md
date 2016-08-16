@@ -25,4 +25,4 @@ Age and social 2x2 tables for support for Dilma from Twitter collected between d
 
 ## Experiments
 
-Python and R scripts for exploring dataset, comparing models and hypothesis testing.
+Python and R scripts/notebooks for exploring dataset, 2kr factorial experiments, grid-seraching, comparing models and hypothesis testing.
